@@ -49,6 +49,8 @@ jobs:
 
       - name: Generate BDD tests
         run: npx bddgen
+        env:
+          BASE_URL: ${{ vars.BASE_URL }}
 
       - name: Run Playwright tests (solo Chrome)
         run: npx playwright test --project="Google Chrome"
