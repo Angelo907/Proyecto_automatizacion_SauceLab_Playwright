@@ -47,6 +47,9 @@ jobs:
       - name: Install Chrome channel
         run: npx playwright install chrome
 
+      - name: Generate BDD tests
+        run: npx bddgen
+
       - name: Run Playwright tests (solo Chrome)
         run: npx playwright test --project="Google Chrome"
         env:
