@@ -10,7 +10,7 @@ Feature: Inicio de sesión
 
     @Regression @Smoke
     Scenario Outline: Iniciar sesión con credenciales inválidas
-        When ingreso el correo "<usuario>" y la contraseña "<password>"
+        When ingreso el usuario "<usuario>" y la contraseña "<password>"
         Then debería visualizar el mensaje de error "<mensaje>"
 
         Examples:

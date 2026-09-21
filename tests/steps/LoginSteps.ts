@@ -24,6 +24,14 @@ When(
   }
 );
 
+When(
+  'ingreso el usuario {string} y la contraseña {string}',
+  async ({ loginPage }, usuario: string, password: string) => {
+
+    await loginPage.login(usuario, password);
+  }
+);
+
 Then('debería ver la página principal', async ({ page  }) => {
   await expect(page).toHaveURL(/.*inventory.html.*/);
 });
