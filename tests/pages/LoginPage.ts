@@ -31,6 +31,7 @@ export class LoginPage extends BasePage {
     await this.click(this.loginButton, 'botón de iniciar sesión');
   }
 
+
   getErrorMessage(): Locator {
     return this.errorMessage;
   }

@@ -13,8 +13,9 @@ Feature: Producto
         And debo poder regresar al catalogo al dar clic en back to products
 
         Examples:
-            | producto            |
-            | Sauce Labs Backpack |
+            | producto              |
+            | Sauce Labs Backpack   |
+            | Sauce Labs Bike Light |
 
 
     @Productos_listados
